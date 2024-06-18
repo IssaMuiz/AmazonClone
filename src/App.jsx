@@ -35,14 +35,6 @@ function App() {
   const state = useSelector((state) => state.user.addToCart);
   const dispatch = useDispatch();
   return (
-    /* value={{
-        cartQuantity,
-        image,
-        name,
-        price,
-        cartIncrement,
-      }} */
-
     <Router>
       <Routes>
         <Route path="/" element={<ProductComponent />} />
