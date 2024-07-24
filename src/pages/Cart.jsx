@@ -1,7 +1,15 @@
 /* eslint-disable react/prop-types */
+import { useDispatch } from "react-redux";
+import { deleteCart } from "../Components/state/cartSlice";
 
 const Cart = ({ cartProduct }) => {
   let price = ((cartProduct.price * cartProduct.itemQuantity) / 100).toFixed(2);
+
+  const dispatch = useDispatch();
+
+  const handleRemove = (cartProduct) => {
+    dispatch(deleteCart(cartProduct));
+  };
 
   return (
     <div>
@@ -20,8 +28,12 @@ const Cart = ({ cartProduct }) => {
             <p className="text-red-700 font-bold mt-2 mb-2">${price}</p>
             <p className="text-xl mt-0">
               Quantity: {cartProduct.itemQuantity}
-              <span className="text-blue-700 mx-2 text-lg">Update</span>
-              <span className="text-blue-700 text-lg">Delete</span>
+              <button
+                onClick={() => handleRemove(cartProduct)}
+                className="text-blue-700 border-none text-lg"
+              >
+                Delete
+              </button>
             </p>
           </div>
         </div>
