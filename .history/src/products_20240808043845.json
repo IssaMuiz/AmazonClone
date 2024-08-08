@@ -140,19 +140,9 @@
     "price": 299
   },
   {
-    "id": 14,
-    "images": "src/assets/images/plain-hooded-fleece-sweatshirt-yellow.jpg",
-    "name": "Plain hooded fleece sweatshirt yellow",
-    "rating": {
-      "star": "src/assets/images/rating-45.png",
-      "count": 129
-    },
-    "price": 523
-  },
-  {
-    "id": 15,
-    "images": "src/assets/images/men-chino-pants-beige.jpg",
-    "name": "Men chino pant beige",
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
     "rating": {
       "star": "src/assets/images/rating-45.png",
       "count": 175
@@ -160,23 +150,33 @@
     "price": 3499
   },
   {
-    "id": 16,
-    "images": "src/assets/images/knit-athletic-sneakers-gray - Copy.jpg",
-    "name": "Knit athletic sneakers gray",
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
     "rating": {
       "star": "src/assets/images/rating-45.png",
-      "count": 123
+      "count": 175
     },
-    "price": 899
-  },
+    "price": 3499
+  }
   {
     "id": 6,
-    "images": "src/assets/images/electric-glass-and-steel-hot-water-kettle.webp",
-    "name": "Electric glass and steel hot water kettle",
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
     "rating": {
       "star": "src/assets/images/rating-45.png",
-      "count": 965
+      "count": 175
     },
-    "price": 231
+    "price": 3499
+  }
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
   }
 ]

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
 import { deleteCart } from "../Components/state/cartSlice";
+import { useSelector } from "react-redux";
 
 const Cart = ({ cartProduct }) => {
   let price = ((cartProduct.price * cartProduct.itemQuantity) / 100).toFixed(2);
@@ -29,7 +30,7 @@ const Cart = ({ cartProduct }) => {
             <p className="text-xl mt-0">
               Quantity: {cartProduct.itemQuantity}
               <button
-                onClick={() => handleRemove(cartProduct.id)}
+                onClick={() => handleRemove(cartProduct)}
                 className="text-blue-700 border-none text-lg"
               >
                 Delete

@@ -13,7 +13,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
             borderRight: "1px solid gray",
             borderBottom: "1px solid gray",
           }}
-          className="flex flex-col h-auto p-5 items-start"
+          className="flex flex-col h-[420px] p-5 items-start"
         >
           <img className="h-40 w-full mr-4" src={product.images} alt="" />
           <p className="leading-none h-7 mt-5 mb-5 text-lg">{product.name}</p>
@@ -41,7 +41,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
-          <div className={` ${product.form ? "block" : "hidden"}`}>
+          <div className={product.form ? "block" : "hidden"}>
             <p>Color</p>
             <div>
               <button className="px-2 border-2 rounded-lg border-yellow-500">
@@ -51,7 +51,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
                 Teal
               </button>
             </div>
-            <p className="mt-1">Size</p>
+            <p className="mt-4">Size</p>
             <div>
               <button className="px-2 border-2 rounded-lg border-yellow-500">
                 S

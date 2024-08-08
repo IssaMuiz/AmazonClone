@@ -1,10 +1,20 @@
-import { useSelector } from "react-redux";
+import { CartContext } from "../App";
+import { useContext, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getTotal } from "../Components/state/cartSlice";
 import Cart from "./Cart";
-
 const Checkout = () => {
   const cartProduct = useSelector((state) => state.user.cartItems);
-  const totalAmount = useSelector((state) => state.user.cartTotalAmount);
+  const cartIncrement = useSelector((state) => state.user.cartQuantity);
+  const totalAmount = useSelector((state) => {
+    state.user.cartTotalAmount;
+  });
 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getTotal);
+  }, [dispatch, totalAmount]);
   return (
     <>
       <div className="fixed top-0 left-0 right-0 flex justify-between mx-10 py-5 bg-white h-10">
@@ -15,7 +25,7 @@ const Checkout = () => {
             alt=""
           />
         </div>
-        <div className="text-xl">Checkout ({cartProduct.length})</div>
+        <div className="text-xl">Checkout ({cartIncrement})</div>
         <div>
           <img
             className=""
@@ -35,14 +45,22 @@ const Checkout = () => {
             >
               <ul className="flex-col p-0 text-lg list-none">
                 <li>Items ({cartProduct.length})</li>
+                <li className="mb-2">Shipping & handling:</li>
+                <li>Total before tax:</li>
+                <li>Estimated tax (10%)</li>
               </ul>
               <ul className="text-end text-lg list-none">
-                <li>${(totalAmount / 100).toFixed(2)}</li>
+                <li>$42.75</li>
+                <li style={{ borderBottom: "1px solid grey" }} className="mb-2">
+                  $4.99
+                </li>
+                <li>$47.74</li>
+                <li>$4.77</li>
               </ul>
             </div>
             <div className="flex justify-between text-red-700 text-xl font-bold ">
               <p className="flex-start">Order total:</p>
-              <p className="flex-end">${(totalAmount / 100).toFixed(2)}</p>
+              <p className="flex-end">${totalAmount}</p>
             </div>
             <button className=" border-none rounded-xl bg-yellow-400 w-full px-36 py-4">
               Place your order

@@ -25,28 +25,19 @@ const userSlice = createSlice({
 
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
+
+    deleteCart(state, action) {
+      state.cartTotalAmount -= action.payload.price;
+      state.cartItems = state.cartItems.filter(
+        (item) => item.id !== action.payload.id
+      );
+    },
     calculateTotalPrice(state) {
       state.cartTotalAmount = state.cartItems.reduce(
         (total, items) => total + items.price * items.itemQuantity,
         0
       );
     },
-    deleteCart(state, action) {
-      const itemsIndex = state.cartItems.findIndex(
-        (item) => item.id === action.payload
-      );
-      if (itemsIndex >= 0) {
-        state.cartTotalAmount -=
-          state.cartItems[itemsIndex].price *
-          state.cartItems[itemsIndex].itemQuantity;
-
-        state.cartItems = state.cartItems.filter(
-          (item) => item.id !== action.payload
-        );
-      }
-      state.cartQuantity = state.cartItems.length;
-    },
-
     getTotal(state) {
       let { total, quantity } = state.cartItems.reduce(
         (cartTotal, cartItem) => {

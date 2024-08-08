@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "images": "src/assets/images/athletic-cotton-socks-6-pairs.jpg",
+    "name": "Black and Gray Athletic Cotton Socks - 6 Pairs",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 87
+    },
+    "price": 1090
+  },
+  {
+    "id": 2,
+    "images": "src/assets/images/intermediate-composite-basketball.jpg",
+    "name": "Intermediate Size Basketball",
+    "rating": {
+      "star": "src/assets/images/rating-40.png",
+      "count": 127
+    },
+    "price": 2095
+  },
+  {
+    "id": 3,
+    "images": "src/assets/images/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+    "name": "Adults Plain Cotton T-Shirt - 2 Pack",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 56
+    },
+    "price": 7990
+  },
+  {
+    "id": 4,
+    "images": "src/assets/images/black-2-slot-toaster (1).jpg",
+    "name": "2 Slot Toaster - Black",
+    "rating": {
+      "star": "src/assets/images/rating-5.png",
+      "count": 2197
+    },
+    "price": 1899
+  },
+  {
+    "id": 5,
+    "images": "src/assets/images/6-piece-white-dinner-plate-set.jpg",
+    "name": "6 Piece White Dinner Plate Set",
+    "rating": {
+      "star": "src/assets/images/rating-40.png",
+      "count": 37
+    },
+    "price": 2067
+  },
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
+  },
+  {
+    "id": 7,
+    "images": "src/assets/images/plain-hooded-fleece-sweatshirt-yellow.jpg",
+    "name": "Plain Hooded Fleece Sweatshirt",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 317
+    },
+    "price": 2400,
+    "form": "wears"
+  }
+]

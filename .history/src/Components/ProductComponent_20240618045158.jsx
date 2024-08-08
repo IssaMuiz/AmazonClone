@@ -6,7 +6,7 @@ const ProductComponent = () => {
   return (
     <div>
       <Navbar />
-      <div className="grid mobile:grid-cols-2   tablet:grid-cols-3 mobile:w-full desktop:grid-cols-5 mt-16">
+      <div className="grid mobile:grid-cols-2   tablet:grid-cols-3 mobile:w-full mt-16">
         {products.map((product) => (
           <ProductContainer
             key={product.id}

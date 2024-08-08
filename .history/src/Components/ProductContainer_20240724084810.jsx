@@ -1,10 +1,17 @@
 /* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
-import { addToCart } from "./state/cartSlice";
+import { addToCart, calculateTotalPrice } from "./state/cartSlice";
+import { useSelector } from "react-redux";
 
 const ProductContainer = ({ product, images, id, name, price }) => {
+  const inputQuantity = useSelector((state) => state.user.inputQuantity);
+
   const dispatch = useDispatch();
 
+  const handleSetCartItems = () => {
+    dispatch(addToCart({ images, id, price, name }));
+    dispatch(calculateTotalPrice());
+  };
   return (
     <div>
       <div>
@@ -13,7 +20,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
             borderRight: "1px solid gray",
             borderBottom: "1px solid gray",
           }}
-          className="flex flex-col h-auto p-5 items-start"
+          className="flex flex-col p-5 items-start"
         >
           <img className="h-40 w-full mr-4" src={product.images} alt="" />
           <p className="leading-none h-7 mt-5 mb-5 text-lg">{product.name}</p>
@@ -28,6 +35,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
             className=" bg-gray-200 p-1 w-14 rounded-lg mb-7"
             name=""
             id=""
+            value={inputQuantity}
           >
             <option value="">0</option>
             <option value="1">1</option>
@@ -41,7 +49,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
-          <div className={` ${product.form ? "block" : "hidden"}`}>
+          <div className={product.form ? "block" : "hidden"}>
             <p>Color</p>
             <div>
               <button className="px-2 border-2 rounded-lg border-yellow-500">
@@ -51,7 +59,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
                 Teal
               </button>
             </div>
-            <p className="mt-1">Size</p>
+            <p className="mt-4">Size</p>
             <div>
               <button className="px-2 border-2 rounded-lg border-yellow-500">
                 S
@@ -66,7 +74,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
           </div>
 
           <button
-            onClick={() => dispatch(addToCart({ images, id, price, name }))}
+            onClick={handleSetCartItems}
             className="bg-yellow-400 border-none w-full rounded-xl p-2 text-sm mt-1 cursor-pointer hover:bg-yellow-500"
           >
             Add to Cart

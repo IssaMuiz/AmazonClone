@@ -1,7 +1,10 @@
 import ProductComponent from "./Components/ProductComponent";
+import React from "react";
 import Checkout from "./pages/Checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+
+export const CartContext = React.createContext();
 
 function App() {
   return (

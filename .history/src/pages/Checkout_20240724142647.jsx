@@ -3,6 +3,7 @@ import Cart from "./Cart";
 
 const Checkout = () => {
   const cartProduct = useSelector((state) => state.user.cartItems);
+
   const totalAmount = useSelector((state) => state.user.cartTotalAmount);
 
   return (

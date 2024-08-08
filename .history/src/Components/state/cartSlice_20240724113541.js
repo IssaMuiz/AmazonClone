@@ -35,16 +35,12 @@ const userSlice = createSlice({
       const itemsIndex = state.cartItems.findIndex(
         (item) => item.id === action.payload
       );
-      if (itemsIndex >= 0) {
-        state.cartTotalAmount -=
-          state.cartItems[itemsIndex].price *
-          state.cartItems[itemsIndex].itemQuantity;
-
+      if (itemsIndex) {
+        state.cartTotalAmount -= itemsIndex.price * itemsIndex.itemQuantity;
         state.cartItems = state.cartItems.filter(
           (item) => item.id !== action.payload
         );
       }
-      state.cartQuantity = state.cartItems.length;
     },
 
     getTotal(state) {

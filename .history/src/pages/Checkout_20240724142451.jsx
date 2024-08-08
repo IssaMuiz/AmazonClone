@@ -3,6 +3,7 @@ import Cart from "./Cart";
 
 const Checkout = () => {
   const cartProduct = useSelector((state) => state.user.cartItems);
+  const cartIncrement = useSelector((state) => state.user.cartQuantity);
   const totalAmount = useSelector((state) => state.user.cartTotalAmount);
 
   return (
@@ -37,7 +38,7 @@ const Checkout = () => {
                 <li>Items ({cartProduct.length})</li>
               </ul>
               <ul className="text-end text-lg list-none">
-                <li>${(totalAmount / 100).toFixed(2)}</li>
+                <li>$42.75</li>
               </ul>
             </div>
             <div className="flex justify-between text-red-700 text-xl font-bold ">

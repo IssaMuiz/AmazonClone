@@ -13,7 +13,7 @@ const ProductContainer = ({ product, images, id, name, price }) => {
             borderRight: "1px solid gray",
             borderBottom: "1px solid gray",
           }}
-          className="flex flex-col h-auto p-5 items-start"
+          className="flex flex-col h-[420px] p-5 items-start"
         >
           <img className="h-40 w-full mr-4" src={product.images} alt="" />
           <p className="leading-none h-7 mt-5 mb-5 text-lg">{product.name}</p>

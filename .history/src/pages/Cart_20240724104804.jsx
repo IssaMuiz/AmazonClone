@@ -29,7 +29,7 @@ const Cart = ({ cartProduct }) => {
             <p className="text-xl mt-0">
               Quantity: {cartProduct.itemQuantity}
               <button
-                onClick={() => handleRemove(cartProduct.id)}
+                onClick={() => handleRemove(cartProduct)}
                 className="text-blue-700 border-none text-lg"
               >
                 Delete

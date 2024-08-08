@@ -70,89 +70,9 @@
     "price": 2562
   },
   {
-    "id": 8,
-    "images": "src/assets/images/bathroom-rug.jpg",
-    "name": "Bathroom rug",
-    "rating": {
-      "star": "src/assets/images/rating-40.png",
-      "count": 175
-    },
-    "price": 1399
-  },
-  {
-    "id": 9,
-    "images": "src/assets/images/blackout-curtains-black.jpg",
-    "name": "Blackout Curtains",
-    "rating": {
-      "star": "src/assets/images/rating-5.png",
-      "count": 175
-    },
-    "price": 281
-  },
-  {
-    "id": 9,
-    "images": "src/assets/images/coffeemaker-with-glass-carafe-black.jpg",
-    "name": "Coffeemaker with glass carage black",
-    "rating": {
-      "star": "src/assets/images/rating-40.png",
-      "count": 175
-    },
-    "price": 309
-  },
-  {
-    "id": 10,
-    "images": "src/assets/images/cotton-bath-towels-teal.webp",
-    "name": "Cotton bath towels teal",
-    "rating": {
-      "star": "src/assets/images/rating-45.png",
-      "count": 175
-    },
-    "price": 982
-  },
-  {
-    "id": 11,
-    "images": "src/assets/images/countertop-blender-64-oz.jpg",
-    "name": "Countertop blender 64 oz",
-    "rating": {
-      "star": "src/assets/images/rating-5.png",
-      "count": 23
-    },
-    "price": 1011
-  },
-  {
-    "id": 12,
-    "images": "src/assets/images/double-elongated-twist-french-wire-earrings.webp",
-    "name": "Double elongated twist french wire earings",
-    "rating": {
-      "star": "src/assets/images/rating-45.png",
-      "count": 98
-    },
-    "price": 326
-  },
-  {
-    "id": 13,
-    "images": "src/assets/images/duvet-cover-set-blue-twin.jpg",
-    "name": "Duvet cover set blue twin",
-    "rating": {
-      "star": "src/assets/images/rating-45.png",
-      "count": 15
-    },
-    "price": 299
-  },
-  {
-    "id": 14,
-    "images": "src/assets/images/plain-hooded-fleece-sweatshirt-yellow.jpg",
-    "name": "Plain hooded fleece sweatshirt yellow",
-    "rating": {
-      "star": "src/assets/images/rating-45.png",
-      "count": 129
-    },
-    "price": 523
-  },
-  {
-    "id": 15,
-    "images": "src/assets/images/men-chino-pants-beige.jpg",
-    "name": "Men chino pant beige",
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
     "rating": {
       "star": "src/assets/images/rating-45.png",
       "count": 175
@@ -160,23 +80,83 @@
     "price": 3499
   },
   {
-    "id": 16,
-    "images": "src/assets/images/knit-athletic-sneakers-gray - Copy.jpg",
-    "name": "Knit athletic sneakers gray",
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
     "rating": {
       "star": "src/assets/images/rating-45.png",
-      "count": 123
+      "count": 175
     },
-    "price": 899
+    "price": 3499
   },
   {
     "id": 6,
-    "images": "src/assets/images/electric-glass-and-steel-hot-water-kettle.webp",
-    "name": "Electric glass and steel hot water kettle",
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
     "rating": {
       "star": "src/assets/images/rating-45.png",
-      "count": 965
+      "count": 175
     },
-    "price": 231
+    "price": 3499
+  },
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
+  },
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
+  },
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
+  },
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
+  },
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
+  },
+  {
+    "id": 6,
+    "images": "src/assets/images/6-piece-non-stick-baking-set (1).webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "star": "src/assets/images/rating-45.png",
+      "count": 175
+    },
+    "price": 3499
   }
 ]
